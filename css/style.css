@@ -1,0 +1,141 @@
+/* Custom Stylesheet */
+
+@import url("./header.css");
+@import url("./navbar_footer.css");
+
+* {
+  font-family: Times New Roman, Helvetica, sans-serif
+}
+
+* p{
+  font-size: x-large;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #E1ECE6 ;
+
+    transition: opacity 0.75s, visibility 0.75s;
+
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content:"";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #FEFEFE;
+  border-top-color: #086E38;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {transform: rotate(0turn)}
+  to {transform: rotate(1turn);}
+}
+
+
+nav .brand-logo {
+  color: #000000;
+}
+
+.brand-logo:hover {
+  color: #086E38;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #086E38;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: #086E38(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.material-icons {
+  background-color: rgba(29, 132, 150, 0.671) 
+}
+
+.material-icons:hover {
+  background-color: rgba(71, 104, 17, 0.671)
+}
+
+.pesquisa{
+  font-size: larger;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  
+  
+}
+
+.pesquisa:hover {
+  color: #086E38;
+  }
+
+  .pesquisa2{
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    
+    
+  }
+  
+  .pesquisa2:hover {
+    color: #086E38;
+    }
+
+.card-content h5 {
+  background-color: #086E38;
+  border: solid 2px #086E38;
+  padding: 10px;
+  
+  
+  color: white
+}

@@ -1,0 +1,48 @@
+footer.page-footer {
+    margin: 0;
+  }
+
+.footer-copyright{
+    background-image: url('');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center; 
+
+}
+  
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  #click a {
+    color: #ffffff;
+    background-color: #086E38;
+    text-decoration:none;
+  }
+  
+  #click a:hover{
+      color: #086E38;
+      background-color:transparent;
+      text-decoration:none;
+  }
+  
+  #navclick a {
+    color:white;
+    background-color: #086E38;
+    text-decoration:none
+  }
+  
+  #navclick a:hover {
+    color:#086E38;
+    background-color: transparent;
+    text-decoration:none
+  }
+  
+  #nav-mobile a {
+    color:white;
+    background-color: #086E38;
+    text-decoration:none
+  }
+
