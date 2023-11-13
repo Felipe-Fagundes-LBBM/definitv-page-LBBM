@@ -4,27 +4,35 @@
 @import url("./navbar_footer.css");
 
 * {
-  font-family: Times New Roman, Helvetica, sans-serif
+  font-family: Times New Roman, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-* p{
+* p {
   font-size: x-large;
 }
 
+
+.justificar {
+  text-align: justify;
+}
+
 .loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    background-color: #E1ECE6 ;
+  background-color: #E1ECE6;
 
-    transition: opacity 0.75s, visibility 0.75s;
+  transition: opacity 0.75s, visibility 0.75s;
 
 }
 
@@ -34,7 +42,7 @@
 }
 
 .loader::after {
-  content:"";
+  content: "";
   width: 75px;
   height: 75px;
   border: 15px solid #FEFEFE;
@@ -44,8 +52,13 @@
 }
 
 @keyframes loading {
-  from {transform: rotate(0turn)}
-  to {transform: rotate(1turn);}
+  from {
+    transform: rotate(0turn)
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 
@@ -69,17 +82,19 @@ p {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: #086E38(255,255,255,.9);
+  color: #086E38(255, 255, 255, .9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+
+.parallax-container .section {
+  width: 100%;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
   }
+
   #index-banner .section {
     top: 10%;
   }
@@ -94,48 +109,103 @@ p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
 
 .material-icons {
-  background-color: rgba(29, 132, 150, 0.671) 
+  background-color: rgba(29, 132, 150, 0.671)
 }
 
 .material-icons:hover {
   background-color: rgba(71, 104, 17, 0.671)
 }
 
-.pesquisa{
+.pesquisa {
   font-size: larger;
   background-color: white;
   color: black;
   border-radius: 20px;
-  
-  
+
+
 }
 
 .pesquisa:hover {
   color: #086E38;
-  }
+}
 
-  .pesquisa2{
-    font-size: larger;
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
-    
-    
-  }
-  
-  .pesquisa2:hover {
-    color: #086E38;
-    }
+.pesquisa2 {
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+
+
+}
+
+.pesquisa2:hover {
+  color: #086E38;
+}
 
 .card-content h5 {
   background-color: #086E38;
   border: solid 2px #086E38;
   padding: 10px;
-  
-  
   color: white
+}
+
+.h-borda {
+  background-color: #086E38;
+  border: solid 2px #086E38;
+  padding: 10px;
+  color: white
+}
+
+.container-slider {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container-imagens{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  }
+
+.slider {
+  opacity: 0;
+  transition: opacity .2;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.on{
+  opacity: 1;
+}
+
+#prev-button, #next-button{
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#prev-button img, #next-button img{
+  width: 100%;
+  height: !00%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#prev-button{
+  transform: rotate(180deg);
 }
