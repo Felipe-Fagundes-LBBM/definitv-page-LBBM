@@ -1,5 +1,5 @@
-(function($){
-  $(function(){
+(function ($) {
+  $(function () {
 
     $('.sidenav').sidenav();
     $('.parallax').parallax();
@@ -10,12 +10,12 @@
 
 //carroseeeeel
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.carousel');
   var instances = M.Carousel.init(elems, {
     fullWidth: true,
     indicators: true,
-    
+
   });
 });
 
@@ -38,7 +38,7 @@ const btnNext = document.getElementById('next-button');
 
 let currentSlide = 0;
 
-function hideSlider () {
+function hideSlider() {
   slider.forEach(item => item.classList.remove('on'));
 }
 
@@ -66,3 +66,5 @@ function prevNextSlider(direction) {
 
 btnNext.addEventListener('click', () => prevNextSlider('next'));
 btnPrev.addEventListener('click', () => prevNextSlider('prev'));
+
+
