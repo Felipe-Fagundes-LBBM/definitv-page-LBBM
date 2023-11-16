@@ -5,17 +5,19 @@
 @import url("./carrosel.css");
 
 * {
-  font-family: Times New Roman, Helvetica, sans-serif;
+  font-family: monospace, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scrollbar-color: transparent transparent;
   scrollbar-width: 0px;
+  max-width: 1400px;
+  
 }
 
 * p {
   font-size: x-large;
-}
+  }
 
 
 .justificar {
@@ -153,13 +155,17 @@ p {
 .card-content h5 {
   background-color: #086E38;
   border: solid 2px #086E38;
+  margin: 50px ;
   padding: 10px;
-  color: white
-}
+  color: white;
+  }
 
 .h-borda {
   background-color: #086E38;
-  border: solid 2px #086E38;
+  border: #086E38 ;
+  border-style: outset;
+  border-width: 5px;
+  border-radius: 20px;
   padding: 10px;
   color: white
 }
