@@ -3,10 +3,9 @@ footer.page-footer {
   }
 
 .footer-copyright{
-    background-image: url('');
-    background-size: cover;
+    background-image: url('#');
+    background-color: #ffffff;
     background-repeat:no-repeat;
-    background-size: cover;
     background-position: center; 
 
 }

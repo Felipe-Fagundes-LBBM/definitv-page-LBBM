@@ -11,7 +11,7 @@
   box-sizing: border-box;
   scrollbar-color: transparent transparent;
   scrollbar-width: 0px;
-  max-width: 1400px;
+  max-width: #;
 }
 
 * p {
@@ -211,4 +211,12 @@ p {
 
 #prev-button{
   transform: rotate(180deg);
+}
+
+.biorender {
+  border: 1px solid #6baaaa;
+  border-radius: 400px;
+  box-shadow: 4px 4px 6px rgba(218, 13, 13, 0.774);
+  object-fit: cover;
+  display: block;
 }
