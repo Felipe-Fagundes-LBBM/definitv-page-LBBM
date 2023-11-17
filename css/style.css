@@ -153,6 +153,7 @@ p {
 }
 
 .card-content h5 {
+  border-radius: 400px;
   background-color: #086E38;
   border: solid 2px #086E38;
   margin: 50px ;
