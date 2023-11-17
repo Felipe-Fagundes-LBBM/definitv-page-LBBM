@@ -126,15 +126,21 @@ p {
 }
 
 .pesquisa {
-  font-size: larger;
-  background-color: white;
   color: black;
-  border-radius: 20px;
+  font-size: larger;
+
+  background-color: rgba(255, 255, 255, 0.74);
+  border-radius: 200px;
+  padding: 10px;
 }
 
 .pesquisa:hover {
   color: #086E38;
+  transition: 0.5;
 }
+
+
+
 
 .pesquisa2 {
   font-size: larger;
@@ -218,5 +224,4 @@ p {
   border-radius: 400px;
   box-shadow: 4px 4px 6px rgba(218, 13, 13, 0.774);
   object-fit: cover;
-  display: block;
 }
