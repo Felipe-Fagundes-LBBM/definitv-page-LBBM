@@ -8,6 +8,11 @@
 })(jQuery); // end of jQuery name space
 
 
+
+$('.dropdown-trigger').dropdown();
+
+
+
 // //carroseeeeel
 
 // document.addEventListener('DOMContentLoaded', function () {
