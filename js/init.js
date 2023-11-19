@@ -8,9 +8,16 @@
 })(jQuery); // end of jQuery name space
 
 
+    // card function
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+});
 
-$('.dropdown-trigger').dropdown();
+// forms
 
+$(document).ready(function() {
+  M.updateTextFields();
+})
 
 
 // //carroseeeeel
