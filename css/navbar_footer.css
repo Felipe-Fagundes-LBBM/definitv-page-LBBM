@@ -6,11 +6,9 @@ footer.page-footer {
     background-image: url('#');
     background-color: #ffffff;
     background-repeat:no-repeat;
-    background-position: center; 
-
+    background-position: center;
 }
-  
-  
+
   button:hover {
     cursor: pointer;
   }

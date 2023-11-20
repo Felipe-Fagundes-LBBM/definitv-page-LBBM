@@ -86,10 +86,19 @@ p {
   line-height: 0;
   height: auto;
   color: #086E38(255, 255, 255, .9);
+  overflow: hidden;
 }
 
+.parallax-container img {
+  width: 100%; /* Garante que a imagem ocupe 100% da largura do contêiner */
+  height: auto; /* Faz com que a altura seja ajustada automaticamente para manter a proporção original da imagem */
+  transform: scale(0.8); /* Ajusta o zoom da imagem.*/
+  transform-origin: center top;
+}
+
+
 .parallax-container .section {
-  width: 100%;
+  width: 80%;
 }
 
 @media only screen and (max-width : 992px) {
