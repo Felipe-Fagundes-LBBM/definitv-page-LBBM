@@ -235,3 +235,7 @@ p {
   box-shadow: 4px 4px 6px rgba(218, 13, 13, 0.774);
   object-fit: cover;
 }
+
+.lista-time ul{
+  list-style-type: circle;
+}
